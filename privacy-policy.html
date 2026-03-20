@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – Price Lookup</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a2e;
+      background: #f8f9fc;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    header .logo { font-size: 2.2rem; margin-bottom: 8px; }
+    header h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 6px; }
+    header p  { font-size: 0.95rem; opacity: 0.7; }
+
+    main {
+      max-width: 780px;
+      margin: 40px auto;
+      padding: 0 24px 60px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 36px 40px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.07);
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 .icon { font-size: 1.3rem; }
+
+    p  { margin-bottom: 12px; color: #444; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      margin: 10px 0 14px 20px;
+      color: #444;
+    }
+    ul li { margin-bottom: 6px; }
+
+    .highlight {
+      background: #f0f4ff;
+      border-left: 4px solid #4a6cf7;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      color: #333;
+      font-size: 0.95rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.93rem;
+    }
+    th {
+      background: #f0f4ff;
+      text-align: left;
+      padding: 10px 14px;
+      color: #333;
+      font-weight: 600;
+    }
+    td { padding: 10px 14px; border-bottom: 1px solid #f0f0f0; color: #444; }
+    tr:last-child td { border-bottom: none; }
+
+    .badge {
+      display: inline-block;
+      background: #e8f5e9;
+      color: #2e7d32;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 12px;
+      letter-spacing: .3px;
+    }
+    .badge.warn {
+      background: #fff3e0;
+      color: #e65100;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #999;
+      padding: 20px 24px 40px;
+    }
+    footer a { color: #4a6cf7; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🏷️</div>
+  <h1>Privacy Policy</h1>
+  <p>Price Lookup – Find &amp; Compare Any Product &nbsp;·&nbsp; Last updated: March 2026</p>
+</header>
+
+<main>
+
+  <!-- Summary -->
+  <div class="card">
+    <h2><span class="icon">📋</span> Summary (Plain English)</h2>
+    <div class="highlight">
+      Price Lookup does <strong>not</strong> collect, transmit, or sell any personal data.
+      It reads product information from the page you are currently viewing — entirely on your
+      device — and uses it to open price comparison searches in new tabs. Nothing about you or
+      your browsing is ever sent to us or any third party.
+    </div>
+    <p>The sections below explain the technical details.</p>
+  </div>
+
+  <!-- What data the extension accesses -->
+  <div class="card">
+    <h2><span class="icon">🔍</span> What Data the Extension Reads</h2>
+    <p>
+      When you are on a product page, Price Lookup reads the following information
+      <strong>directly from that page</strong>, locally on your device:
+    </p>
+    <ul>
+      <li><strong>Product title</strong> — extracted from the page heading or structured data</li>
+      <li><strong>Product price</strong> — displayed price on the page (if present)</li>
+      <li><strong>Product image URL</strong> — a link to the product photo</li>
+      <li><strong>Page URL and hostname</strong> — to identify which store you are on</li>
+    </ul>
+    <p>
+      This data is held <strong>only in your browser's session memory</strong> (cleared when
+      you close the browser) and is used solely to populate the extension panel and generate
+      search queries on the stores you choose.
+    </p>
+    <p>
+      Price Lookup <strong>never reads</strong> any other page content, form fields, passwords,
+      payment information, or personal details.
+    </p>
+  </div>
+
+  <!-- Local storage -->
+  <div class="card">
+    <h2><span class="icon">💾</span> Data Stored on Your Device</h2>
+    <p>
+      Price Lookup stores a small amount of data locally in your browser using the standard
+      Chrome storage API. This data <strong>never leaves your device</strong>.
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Item stored</th>
+          <th>Where</th>
+          <th>Purpose</th>
+          <th>Cleared when</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Current product (title, price, image URL)</td>
+          <td>Session storage</td>
+          <td>Keeps product visible when switching tabs</td>
+          <td>Browser / session closed</td>
+        </tr>
+        <tr>
+          <td>Referral codes enabled (true/false)</td>
+          <td>Sync storage</td>
+          <td>Remember your affiliate preference across devices</td>
+          <td>You disable it or uninstall</td>
+        </tr>
+        <tr>
+          <td>Store click count</td>
+          <td>Local storage</td>
+          <td>Decides when to show the referral opt-in prompt</td>
+          <td>Extension uninstalled or storage cleared</td>
+        </tr>
+        <tr>
+          <td>Nudge dismissed (true/false)</td>
+          <td>Local storage</td>
+          <td>Avoids re-showing the support banner after dismissal</td>
+          <td>Extension uninstalled or storage cleared</td>
+        </tr>
+        <tr>
+          <td>Affiliate reminder pending (true/false)</td>
+          <td>Local storage</td>
+          <td>Internal flag for the periodic reminder alarm</td>
+          <td>Consumed immediately on next panel open</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      None of this data contains any personally identifiable information.
+    </p>
+  </div>
+
+  <!-- Network requests -->
+  <div class="card">
+    <h2><span class="icon">🌐</span> Network Requests Made by the Extension</h2>
+    <p>The extension makes <strong>one optional outbound request</strong>:</p>
+
+    <div class="highlight">
+      <strong>Affiliate codes update</strong><br>
+      URL: <code>https://cdn.jsdelivr.net/gh/TehFox/PriceLookup@main/affiliates.json</code><br>
+      When: When the extension panel opens, once per session.<br>
+      What is sent: Nothing. This is a plain HTTP GET request with no cookies, no user
+      identifiers, and no tracking parameters. It simply downloads the latest list of
+      affiliate codes (e.g. Amazon Associates tag) for use when you click a store button.
+    </div>
+
+    <p>
+      This request is made to <a href="https://www.jsdelivr.com" target="_blank"
+      rel="noopener">jsDelivr</a>, a public CDN. jsDelivr may log standard server
+      access data (IP address, timestamp, file requested) subject to their own
+      <a href="https://www.jsdelivr.com/privacy-policy-jsdelivr-net" target="_blank"
+      rel="noopener">privacy policy</a>. Price Lookup does not receive or retain any
+      data from this exchange.
+    </p>
+
+    <p>
+      All other network requests originate from <strong>you</strong> — when you click a store
+      button (e.g. Amazon, Wayfair), your browser opens that store's website in a normal new
+      tab. That request is subject to the destination store's own privacy policy.
+    </p>
+  </div>
+
+  <!-- Affiliate / referral codes -->
+  <div class="card">
+    <h2><span class="icon">💛</span> Referral (Affiliate) Codes</h2>
+    <p>
+      Price Lookup offers an optional, user-controlled referral code feature. Here is exactly
+      how it works:
+    </p>
+    <ul>
+      <li>
+        <strong>Opt-in only.</strong> Referral codes are <em>disabled by default</em>.
+        They are only activated if you explicitly click "Enable referral codes" inside the
+        extension. You can disable them at any time from Settings.
+      </li>
+      <li>
+        <strong>Triggered only by your actions.</strong> A referral code is appended to a
+        store URL <em>only when you click a store button</em> inside the Price Lookup panel.
+        The extension never modifies URLs you navigate to on your own.
+      </li>
+      <li>
+        <strong>No extra cost to you.</strong> Referral codes do not change the price you
+        pay. When a purchase is made through a tracked link, the retailer pays a small
+        commission to the developer — at no additional cost to you.
+      </li>
+      <li>
+        <strong>Transparent.</strong> When enabled, a 💛 indicator appears in the panel
+        header. The affiliate code appended to URLs is visible in the browser address bar.
+      </li>
+      <li>
+        <strong>No personal data shared.</strong> The only information the affiliate tag
+        carries is a static code identifying Price Lookup as the referrer — never your name,
+        account, or any personal identifier.
+      </li>
+    </ul>
+
+    <p>
+      Affiliate programmes used include Amazon Associates, Commission Junction, and similar
+      networks. Each network's handling of click data is governed by their own privacy
+      policies.
+    </p>
+  </div>
+
+  <!-- Permissions justification -->
+  <div class="card">
+    <h2><span class="icon">🔐</span> Why the Extension Requests These Permissions</h2>
+
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Why it is needed</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>activeTab</code></td>
+          <td>Read the current tab's URL and title when you click the extension icon</td>
+        </tr>
+        <tr>
+          <td><code>tabs</code></td>
+          <td>Open store search results in a new tab when you click a store button</td>
+        </tr>
+        <tr>
+          <td><code>storage</code></td>
+          <td>Save your preferences (referral toggle) and session product data locally</td>
+        </tr>
+        <tr>
+          <td><code>sidePanel</code></td>
+          <td>Display the Price Lookup interface in Chrome's built-in side panel</td>
+        </tr>
+        <tr>
+          <td><code>contextMenus</code></td>
+          <td>Add "Find Similar Product" to the right-click menu on images</td>
+        </tr>
+        <tr>
+          <td><code>alarms</code></td>
+          <td>Periodically check (every 30 min) whether to show the referral opt-in reminder</td>
+        </tr>
+        <tr>
+          <td><code>host_permissions: &lt;all_urls&gt;</code></td>
+          <td>
+            Detect products on <em>any</em> website you visit — not just known stores.
+            Price Lookup works on any e-commerce site using standard product markup
+            (JSON-LD, OpenGraph), which covers thousands of stores worldwide.
+            Restricting to a fixed list of domains would prevent it from working on
+            most of the web.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Children -->
+  <div class="card">
+    <h2><span class="icon">👶</span> Children's Privacy</h2>
+    <p>
+      Price Lookup is not directed at children under the age of 13. We do not knowingly
+      collect any information from children. The extension does not collect personal data
+      from any user.
+    </p>
+  </div>
+
+  <!-- Changes -->
+  <div class="card">
+    <h2><span class="icon">📝</span> Changes to This Policy</h2>
+    <p>
+      If this privacy policy changes materially (e.g. a new type of data is collected),
+      the updated policy will be posted at this URL and the "Last updated" date at the top
+      will be revised. Continued use of the extension after a change constitutes acceptance
+      of the updated policy.
+    </p>
+  </div>
+
+  <!-- Contact -->
+  <div class="card">
+    <h2><span class="icon">✉️</span> Contact</h2>
+    <p>
+      If you have any questions about this privacy policy or how Price Lookup handles data,
+      please open an issue on the
+      <a href="https://github.com/TehFox/PriceLookup" target="_blank" rel="noopener">
+        GitHub repository
+      </a>
+      or contact the developer through the Chrome Web Store listing.
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  <p>🏷️ Price Lookup &nbsp;·&nbsp; Built with ❤️ for smart shoppers &nbsp;·&nbsp;
+    <a href="https://github.com/TehFox/PriceLookup" target="_blank" rel="noopener">GitHub</a>
+  </p>
+</footer>
+
+</body>
+</html>
