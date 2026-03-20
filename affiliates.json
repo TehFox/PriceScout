@@ -1,0 +1,52 @@
+{
+  "_comment": "Bundled fallback affiliate codes. Replace AFFILIATE_API_BASE in sidepanel.js with your own API to serve these remotely.",
+  "_types": {
+    "param":   "Inject a query-string parameter directly into the store URL (e.g. Amazon tag=)",
+    "awin":    "Wrap the URL in an Awin deep-link redirect. Fields: mid (Awin merchant ID), affid (your Awin publisher ID)",
+    "rakuten": "Wrap the URL in a Rakuten/LinkShare deep link. Fields: publisherId, mid (merchant ID)",
+    "cj":      "Wrap the URL in a Commission Junction deep link. Fields: publisherId, mid (merchant ID)"
+  },
+  "_networks": {
+    "amazon":         "Amazon Associates — associates.amazon.com — param: tag",
+    "wayfair":        "Commission Junction or direct — param: refid",
+    "ikea":           "Awin — awin.com (search advertiser 'IKEA') — mid varies by country",
+    "target":         "Impact Radius — impact.com (search 'Target') — param: irclickid or via deep link",
+    "westelm":        "Commission Junction — cj.com — publisher account required",
+    "overstock":      "Commission Junction — cj.com",
+    "cratebarrel":    "Commission Junction — cj.com",
+    "google_shopping":"No affiliate programme",
+    "aliexpress":     "AliExpress Portals — portals.aliexpress.com — param: aff_fcid + aff_trace_key",
+    "temu":           "Temu Affiliate — temu.com/affiliate — param-based after signup",
+    "jysk":           "Awin — awin.com (search 'JYSK') — mid varies by country",
+    "maisonsdumonde": "Awin — awin.com (search 'Maisons du Monde')",
+    "conforama":      "Awin — awin.com (search 'Conforama') — varies by country",
+    "ashley":         "Rakuten Advertising — rakutenadvertising.com",
+    "dunelm":         "Awin UK — awin.com (search 'Dunelm') — mid: 2187",
+    "leroymerlin":    "Awin — awin.com (search 'Leroy Merlin') — varies by country"
+  },
+
+  "amazon":          { "type": "param",   "param": "tag",   "value": "pricescout-20"   },
+  "amazon_uk":       null,
+  "amazon_de":       null,
+  "amazon_fr":       null,
+  "amazon_es":       null,
+  "amazon_it":       null,
+  "amazon_ca":       null,
+  "amazon_au":       null,
+  "wayfair":         { "type": "param",   "param": "refid", "value": "pricescout001"   },
+  "ikea":            null,
+  "target":          null,
+  "westelm":         null,
+  "overstock":       { "type": "param",   "param": "CJAID", "value": "pricescout"      },
+  "cratebarrel":     null,
+  "google_shopping": null,
+
+  "aliexpress":      null,
+  "temu":            null,
+  "jysk":            null,
+  "maisonsdumonde":  null,
+  "conforama":       null,
+  "ashley":          null,
+  "dunelm":          null,
+  "leroymerlin":     null
+}
